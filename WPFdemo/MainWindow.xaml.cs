@@ -26,19 +26,20 @@ namespace WPFdemo
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        void OnClick1(object sender, RoutedEventArgs e)
         {
-            txt1.Text = "Button is Clicked";
+            btn1.Background = Brushes.LightBlue;
         }
 
-        private void StackPanel_Click(object sender, RoutedEventArgs e)
+        void OnClick2(object sender, RoutedEventArgs e)
         {
-            txt2.Text = "Click event is bubbled to Stack Panel";
+            btn2.Background = Brushes.Pink;
         }
 
-        private void Window_Click(object sender, RoutedEventArgs e)
+        void OnClick3(object sender, RoutedEventArgs e)
         {
-            txt3.Text = "Click event is bubbled to Window";
+            btn1.Background = Brushes.Pink;
+            btn2.Background = Brushes.LightBlue;
         }
     }
 }
